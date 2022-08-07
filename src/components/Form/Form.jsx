@@ -38,7 +38,7 @@ export default function Form() {
   return (
     <>
       <div className="form-container">
-        <Input labelText="IP Adress" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function(e){getInputValue(e)}} />
+        <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function(e){getInputValue(e)}} />
         <Button text="Retrieve data!" handleMethod={function (e) { fetchApi() }} />
         <DisplayData data={data}/>
       </div>
