@@ -1,3 +1,20 @@
+/* VARIABLES */
+:root{
+  --background-color: #1e1e1e;  
+  --primary-color: #F27405;
+  --transition-time: 250ms;
+  --primary-font-color: #FFF;
+  --soft-font-color: rgb(200, 200, 200);
+}
+
+html, body{
+  background-color: var(--background-color);
+  color: var(--primary-font-color);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,45 @@
+.input-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container-label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 8px;
+}
+.input-label{
+    margin: 0;
+}
+
+.input-element{
+    height: 3em;
+    width: 99%;   
+    border: 0.1px hidden var(--primary-color);
+    border-radius: 0.5em;
+    text-indent: 8px;
+}
+
+.input-element:focus {
+    outline-width: thin;
+    outline-color: var(--primary-color);
+  }
+
+.input-container-hint{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.input-hint{
+    font-size: 0.75rem;
+    color: var(--soft-font-color);
+}

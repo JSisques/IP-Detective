@@ -1,0 +1,12 @@
+.display-data-container{
+    margin-top: 32px;
+    margin-top: 32px;
+    width: 100%;
+    background-color: #282828;
+    border: 1px solid var(--soft-font-color);
+    border-radius: 0.5em;
+}
+
+.display-data-pre{
+
+}
