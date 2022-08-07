@@ -3,14 +3,16 @@ import Input from './Input/Input'
 import './Form.css'
 import Button from './Button/Button'
 import DisplayData from '../DisplayData/DisplayData'
+import CountryContainer from '../Container/CountryContainer/CountryContainer'
 
 export default function Form() {
 
   const [data, setData] = useState('')
   const [inputValue, setInputValue] = useState('')
 
-  function fetchApi() {
-    const url = "https://ip-geo-location.p.rapidapi.com/ip/" + inputValue + "?format=json"
+  function fetchApi(myIp) {
+    const url = myIp ? "https://ip-geo-location.p.rapidapi.com/ip/check?format=json" : "https://ip-geo-location.p.rapidapi.com/ip/" + inputValue + "?format=json";
+    //const url = "https://ip-geo-location.p.rapidapi.com/ip/" + inputValue + "?format=json"
     //const url = "https://ip-geo-location.p.rapidapi.com/ip/check?format=json"
 
     const OPTIONS = {
@@ -25,12 +27,12 @@ export default function Form() {
       .then(res => res.json())
       .then(json => {
         console.log(json)
-        setData(JSON.stringify(json, null, 2))
+        setData(json)
       })
       .catch(err => console.error('error:' + err));
   }
 
-  function getInputValue(e){
+  function getInputValue(e) {
     var input = e.target.value
     setInputValue(input)
   }
@@ -38,10 +40,15 @@ export default function Form() {
   return (
     <>
       <div className="form-container">
-        <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function(e){getInputValue(e)}} />
-        <Button text="Retrieve data!" handleMethod={function (e) { fetchApi() }} />
-        <DisplayData data={data}/>
+        <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function (e) { getInputValue(e) }} />
+        <Button text="Retrieve data!" handleMethod={function (e) { fetchApi(false) }} />
+        <Button text="Get info my IP" handleMethod={function (e) { fetchApi(true) }} />
+            {data != null ? <DisplayData data={JSON.stringify(data, null, 2)} /> : ""}
       </div>
     </>
   )
 }
+
+/*
+<CountryContainer data={data.country} />
+* */

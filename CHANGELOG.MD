@@ -10,3 +10,7 @@ This file is a contains a list of changes for each release.
 ## v1.0.1 (2022-08-07)
 
 * Fixed typo at `Form.jsx`
+
+## v1.1.1 (2022-08-08)
+
+* Added a feature to get your own IP information

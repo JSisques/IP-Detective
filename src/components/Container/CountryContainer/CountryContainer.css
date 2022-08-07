@@ -1,0 +1,19 @@
+.country-container{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 32px;
+    background-color: #282828;
+    border: 1px solid var(--soft-font-color);
+    border-radius: 0.5em;
+}
+
+.country-container-title{
+    margin-bottom: 0px;
+}
+
+.country-container-info{
+    margin: 0px;
+}
