@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/IP-Detective/static/css/main.450f61fe.css",
-    "main.js": "/IP-Detective/static/js/main.dea4233b.js",
+    "main.css": "/IP-Detective/static/css/main.8acd8775.css",
+    "main.js": "/IP-Detective/static/js/main.b5b9cbb1.js",
     "static/js/787.aad9cac2.chunk.js": "/IP-Detective/static/js/787.aad9cac2.chunk.js",
     "static/media/logo.svg": "/IP-Detective/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/IP-Detective/index.html",
-    "main.450f61fe.css.map": "/IP-Detective/static/css/main.450f61fe.css.map",
-    "main.dea4233b.js.map": "/IP-Detective/static/js/main.dea4233b.js.map",
+    "main.8acd8775.css.map": "/IP-Detective/static/css/main.8acd8775.css.map",
+    "main.b5b9cbb1.js.map": "/IP-Detective/static/js/main.b5b9cbb1.js.map",
     "787.aad9cac2.chunk.js.map": "/IP-Detective/static/js/787.aad9cac2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.450f61fe.css",
-    "static/js/main.dea4233b.js"
+    "static/css/main.8acd8775.css",
+    "static/js/main.b5b9cbb1.js"
   ]
 }
