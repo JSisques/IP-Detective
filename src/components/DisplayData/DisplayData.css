@@ -8,5 +8,6 @@
 }
 
 .display-data-pre{
-
+    white-space: pre-wrap;
+    text-align: left;
 }

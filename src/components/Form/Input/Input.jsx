@@ -8,7 +8,7 @@ export default function Input(props) {
                 <div className="input-container-label">
                     <h3 className='input-label'>{props.labelText}</h3>
                 </div>
-                <input className='input-element' type="text" placeholder={props.placeholder} />
+                <input className='input-element' type="text" placeholder={props.placeholder} onChange={props.onChange}/>
                 <div className="input-container-hint">
                     <small className="input-hint">{props.hint}</small>
                 </div>
