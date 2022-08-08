@@ -10,6 +10,8 @@ export default function Form() {
   const [data, setData] = useState('')
   const [inputValue, setInputValue] = useState('')
 
+  console.log(data)
+
   function fetchApi(myIp) {
     const url = myIp ? "https://ip-geo-location.p.rapidapi.com/ip/check?format=json" : "https://ip-geo-location.p.rapidapi.com/ip/" + inputValue + "?format=json";
     //const url = "https://ip-geo-location.p.rapidapi.com/ip/" + inputValue + "?format=json"
@@ -43,7 +45,7 @@ export default function Form() {
         <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function (e) { getInputValue(e) }} />
         <Button text="Retrieve data!" primary={true} handleMethod={function (e) { fetchApi(false) }} />
         <Button text="Get info my IP" handleMethod={function (e) { fetchApi(true) }} />
-            {data != null ? <DisplayData data={JSON.stringify(data, null, 2)} /> : ""}
+            {data != '' ? <DisplayData hidden={false} data={JSON.stringify(data, null, 2)} /> : <DisplayData hidden={true} data={JSON.stringify(data, null, 2)} />}
       </div>
     </>
   )
