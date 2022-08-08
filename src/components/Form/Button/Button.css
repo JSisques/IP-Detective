@@ -25,3 +25,9 @@
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
+.button-element.secondary {
+    background-color: red;
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--primary-color);
+}
