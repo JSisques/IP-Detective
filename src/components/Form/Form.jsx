@@ -4,6 +4,8 @@ import './Form.css'
 import Button from './Button/Button'
 import DisplayData from '../DisplayData/DisplayData'
 import CountryContainer from '../Container/CountryContainer/CountryContainer'
+import Card from '../Card/Card'
+import Slider from '../Slider/Slider'
 
 export default function Form() {
 
@@ -45,6 +47,8 @@ export default function Form() {
         <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function (e) { getInputValue(e) }} />
         <Button text="Retrieve data!" primary={true} handleMethod={function (e) { fetchApi(false) }} />
         <Button text="Get info my IP" handleMethod={function (e) { fetchApi(true) }} />
+        <Slider />
+        <Card/>
             {data != '' ? <DisplayData hidden={false} data={JSON.stringify(data, null, 2)} /> : <DisplayData hidden={true} data={JSON.stringify(data, null, 2)} />}
       </div>
     </>

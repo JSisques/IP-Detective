@@ -2,14 +2,14 @@ import { getDefaultNormalizer } from '@testing-library/react';
 import React from 'react'
 import "./CountryContainer.css"
 
-export default function CountryContainer({data}) {
+export default function CountryContainer({ data }) {
   return (
     <>
         <div className='country-container'>
-            <h2 className="country-container-title">Country info</h2>
-            <div className="country-container-info">
-                <h3 className='contry-title'>{data.flag.emoji} {data.name} {data.flag.emoji}</h3>
-            </div>
+          <h2 className="country-container-title">Country info</h2>
+          <div className="country-container-info">
+            <h3 className='contry-title'>{data.flag.emoji} {data.name} {data.flag.emoji}</h3>
+          </div>
         </div>
     </>
   )

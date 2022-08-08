@@ -1,0 +1,25 @@
+.slider-container {
+    border: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.slider-child {
+    width: 45%;
+    flex: 0 0 auto;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider-child{
+        width: 90%;
+    }
+  }
+
+
