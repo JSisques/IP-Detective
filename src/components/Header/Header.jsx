@@ -4,8 +4,8 @@ import "./Header.css"
 export default function Header() {
   return (
     <>
-    <header>
-
+    <header className="header-container">
+    <h1 className="header-title">IP Detective</h1>
     </header>
     </>
   )

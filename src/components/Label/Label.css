@@ -1,0 +1,23 @@
+.label-container{
+    color: var(--primary-font-color);
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.label-element.extra-small{
+    color: var(--soft-font-color);
+    margin-top: 0;
+    font-size: 0.8em;
+}
+
+.label-element.small{
+    font-size: 1em;
+}
+
+.label-element.medium{
+    font-size: 1.25em;
+}
+
+.label-element.big{
+    font-size: 1.5em;
+}
