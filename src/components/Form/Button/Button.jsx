@@ -5,7 +5,7 @@ export default function Button(props) {
   return (
     <>
     <div className="button-container">
-        <button className='button-element' onClick={props.handleMethod}>
+        <button className={props.primary ? 'button-element' : 'button-element secondary'} onClick={props.handleMethod}>
           {props.text}
         </button>
     </div>

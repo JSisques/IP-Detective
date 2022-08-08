@@ -1,6 +1,7 @@
 /* VARIABLES */
 :root{
   --background-color: #1e1e1e;  
+  --secondary-background-color: #282828;
   --primary-color: #F27405;
   --transition-time: 250ms;
   --primary-font-color: #FFF;

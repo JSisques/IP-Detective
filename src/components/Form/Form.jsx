@@ -41,7 +41,7 @@ export default function Form() {
     <>
       <div className="form-container">
         <Input labelText="IP Address" placeholder="Write an IP address" hint="For example: 192.168.1.2" onChange={function (e) { getInputValue(e) }} />
-        <Button text="Retrieve data!" handleMethod={function (e) { fetchApi(false) }} />
+        <Button text="Retrieve data!" primary={true} handleMethod={function (e) { fetchApi(false) }} />
         <Button text="Get info my IP" handleMethod={function (e) { fetchApi(true) }} />
             {data != null ? <DisplayData data={JSON.stringify(data, null, 2)} /> : ""}
       </div>
